@@ -13,7 +13,7 @@ Ideas capture:
 
 ## Template
 
-See [docs/templates/idea-template.md](../docs/templates/idea-template.md) for a template.
+See [templates/idea-template.md](../templates/idea-template.md) for a template.
 
 ## Naming Convention
 

@@ -28,6 +28,8 @@ ENV/
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb
+# Keep .ipynb files but ignore checkpoints
+!*.ipynb
 
 # IDEs
 .vscode/
@@ -81,4 +83,12 @@ Thumbs.db
 
 # Git
 *.orig
+*.rej
+
+# Research-specific
+# Keep structure but ignore large files
+*.pdf
+!docs/*.pdf
+papers/*.pdf
+!papers/README.md
 

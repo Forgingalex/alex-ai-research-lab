@@ -13,7 +13,11 @@ Paper summaries include:
 
 ## Template
 
-See [docs/templates/paper-summary-template.md](../docs/templates/paper-summary-template.md) for a template.
+See [templates/paper-summary-template.md](../templates/paper-summary-template.md) for a template.
+
+## Note
+
+For concise summaries (quick reference), use `/notes/paper-summaries/`. This directory is for detailed reviews and analyses.
 
 ## Naming Convention
 

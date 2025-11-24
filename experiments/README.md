@@ -13,7 +13,7 @@ Experiments document:
 
 ## Template
 
-See [docs/templates/experiment-plan-template.md](../docs/templates/experiment-plan-template.md) for a template.
+See [templates/experiment-template.md](../templates/experiment-template.md) for a template.
 
 ## Naming Convention
 

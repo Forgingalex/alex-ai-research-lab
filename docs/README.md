@@ -1,28 +1,38 @@
 # Documentation
 
-This directory contains documentation and templates for the AI Brain research project.
+This directory contains core documentation for the AI Brain research project.
+
+## 📚 Core Documents
+
+- **[Roadmap](roadmap.md)** — Research timeline and milestones (3 months, 6-12 months, 1-2 years)
+- **[Research Workflow](research-workflow.md)** — Standardized research processes and documentation practices
+- **[Naming Conventions](naming-conventions.md)** — File and folder naming guidelines
+
+## 🧠 Concept Definitions
+
+Core module concept definitions:
+
+- **[Memory](concepts/memory.md)** — Memory systems concepts
+- **[Reasoning](concepts/reasoning.md)** — Reasoning engine concepts
+- **[Planning](concepts/planning.md)** — Planning module concepts
+- **[Safety](concepts/safety.md)** — Safety and alignment concepts
 
 ## 📋 Templates
 
-Templates are available to help maintain consistency across research documents:
-
-- **[Research Note Template](templates/research-note-template.md)** - For technical research notes
-- **[Paper Summary Template](templates/paper-summary-template.md)** - For paper reviews
-- **[Experiment Plan Template](templates/experiment-plan-template.md)** - For experiment documentation
-- **[Research Log Template](templates/research-log-template.md)** - For daily/weekly logs
-- **[Idea Template](templates/idea-template.md)** - For capturing ideas
+Templates are located in `/templates/` (root level). See [Templates README](../templates/README.md) for all available templates.
 
 ## 📖 Usage
 
-1. Copy the relevant template
-2. Fill in the sections
-3. Save to the appropriate directory (`/notes/`, `/papers/`, `/experiments/`, etc.)
-4. Follow the repository structure and naming conventions
+1. Read the [Research Workflow](research-workflow.md) to understand processes
+2. Use templates from `/templates/` for consistency
+3. Follow [Naming Conventions](naming-conventions.md) for files
+4. Check the [Roadmap](roadmap.md) for current priorities
 
 ## 🎯 Guidelines
 
-- Use templates as starting points, but feel free to adapt as needed
-- Maintain consistency in formatting and structure
+- Follow the research workflow
+- Use appropriate templates
+- Maintain consistency in formatting
 - Link related documents
 - Include diagrams (Mermaid) when helpful
 - Reference related research and papers

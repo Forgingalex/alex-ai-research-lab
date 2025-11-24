@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - given-names: Alex
+    family-names: Forgingalex
+title: "Alex AI Research Lab - Next-Generation AI Brain"
+version: "0.1.0"
+date-released: "2024-11-24"
+repository-code: "https://github.com/Forgingalex/alex-ai-research-lab"
+license: MIT
+keywords:
+  - "artificial intelligence"
+  - "cognitive architecture"
+  - "autonomous systems"
+  - "memory systems"
+  - "reasoning"
+  - "planning"
+  - "AI research"
+

@@ -29,7 +29,7 @@
 - [Module 1]: [How it's affected]
 - [Module 2]: [How it's affected]
 
-**Integration Points:**
+### Integration Points:
 - [Integration point 1]
 - [Integration point 2]
 

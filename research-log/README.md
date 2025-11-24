@@ -14,7 +14,7 @@ Research logs help track:
 
 ## Template
 
-See [docs/templates/research-log-template.md](../docs/templates/research-log-template.md) for a template.
+See [templates/research-log-template.md](../templates/research-log-template.md) for a template.
 
 ## Naming Convention
 

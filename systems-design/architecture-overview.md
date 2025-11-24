@@ -318,11 +318,53 @@ graph TB
 3. **Experimentation** — Test individual modules and integration
 4. **Iteration** — Refine based on results
 
-## References
+## Module-Specific Documentation
 
-- See `/papers/` for relevant research
-- See `/experiments/` for experimental designs
+### Detailed Module Designs
+- **[Memory System Architecture](memory/memory-overview.md)** — Detailed memory architecture
+- **[Reasoning Engine Architecture](reasoning/reasoning-core.md)** — Detailed reasoning architecture
+- **[Safety Framework](safety/safety-overview.md)** — Safety and alignment mechanisms
+- **[Planning Module](planning/)** — Planning architecture (coming soon)
+
+### Concept Definitions
+- **[Memory Concepts](../../docs/concepts/memory.md)** — Memory system concepts
+- **[Reasoning Concepts](../../docs/concepts/reasoning.md)** — Reasoning concepts
+- **[Planning Concepts](../../docs/concepts/planning.md)** — Planning concepts
+- **[Safety Concepts](../../docs/concepts/safety.md)** — Safety concepts
+
+## Related Research
+
+- See `/papers/` for relevant research papers
+- See `/notes/paper-summaries/` for concise paper summaries
+- See `/experiments/` for experimental designs and results
 - See `/notes/` for detailed technical notes
+- See `/research-log/` for ongoing research discoveries
+
+## Future Enhancements
+
+### Memory v2 (Planned)
+- Advanced consolidation mechanisms
+- Improved retrieval algorithms
+- Better integration between memory types
+- See [Memory Overview](memory/memory-overview.md) for current design
+
+### Reasoning v2 (Planned)
+- Enhanced causal reasoning
+- Better symbolic-neural integration
+- Improved meta-reasoning
+- See [Reasoning Core](reasoning/reasoning-core.md) for current design
+
+### Safety Layers (Planned)
+- Enhanced value alignment mechanisms
+- Advanced verification procedures
+- Improved interpretability
+- See [Safety Overview](safety/safety-overview.md) for current design
+
+### Added on 2024-11-24
+- Module-specific documentation links
+- Concept definition references
+- Future enhancements section
+- Enhanced cross-references
 
 ---
 

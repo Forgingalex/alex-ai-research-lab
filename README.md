@@ -20,53 +20,104 @@ This repository documents the research, design, and development journey toward c
 
 The AI Brain is not a single model or chatbot. It is a **modular cognitive architecture** with:
 
+```mermaid
+graph TB
+    subgraph "Perception Layer"
+        P1[Text Processor]
+        P2[Vision Module]
+        P3[Sensor Fusion]
+        P4[Multi-Modal Integrator]
+    end
+    
+    subgraph "Memory Systems"
+        M1[Episodic Memory]
+        M2[Semantic Memory]
+        M3[Procedural Memory]
+        M4[Working Memory]
+    end
+    
+    subgraph "Cognitive Core"
+        C1[Reasoning Engine]
+        C2[Planning Module]
+        C3[World Model]
+        C4[Self-Reflection]
+    end
+    
+    subgraph "Decision & Action"
+        D1[Goal Manager]
+        D2[Action Selector]
+        D3[Execution Interface]
+    end
+    
+    subgraph "Learning & Adaptation"
+        L1[Online Learning]
+        L2[Meta-Learning]
+        L3[Continual Adaptation]
+    end
+    
+    subgraph "Safety & Alignment"
+        S1[Value Alignment]
+        S2[Robustness]
+        S3[Interpretability]
+    end
+    
+    P1 --> M4
+    P2 --> M4
+    P3 --> M4
+    P4 --> M4
+    
+    M4 --> C1
+    M1 --> C1
+    M2 --> C1
+    M3 --> C1
+    
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    C4 --> D1
+    
+    D1 --> D2
+    D2 --> D3
+    
+    D3 --> L1
+    L1 --> L2
+    L2 --> L3
+    
+    L3 -.-> M1
+    L3 -.-> M2
+    L3 -.-> M3
+    
+    S1 --> D1
+    S2 --> D3
+    S3 --> C4
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    AI BRAIN SYSTEM                       │
-├─────────────────────────────────────────────────────────┤
-│  PERCEPTION LAYER                                        │
-│  ├─ Text Processing                                      │
-│  ├─ Vision & Image Understanding                         │
-│  ├─ Sensor Fusion (Robotics)                             │
-│  └─ Multi-Modal Integration                              │
-├─────────────────────────────────────────────────────────┤
-│  MEMORY SYSTEMS                                          │
-│  ├─ Episodic Memory (Experiences)                        │
-│  ├─ Semantic Memory (Knowledge)                          │
-│  ├─ Procedural Memory (Skills)                           │
-│  └─ Working Memory (Active Context)                      │
-├─────────────────────────────────────────────────────────┤
-│  COGNITIVE CORE                                          │
-│  ├─ Reasoning Engine (Logic, Causal, Analogical)         │
-│  ├─ Planning Module (Goal Decomposition, Scheduling)     │
-│  ├─ World Model (State Representation, Prediction)        │
-│  └─ Self-Reflection (Meta-Cognition, Error Correction)   │
-├─────────────────────────────────────────────────────────┤
-│  DECISION & ACTION LAYER                                 │
-│  ├─ Goal Management                                      │
-│  ├─ Action Selection                                     │
-│  ├─ Execution Interfaces                                 │
-│  └─ Multi-Agent Coordination                             │
-├─────────────────────────────────────────────────────────┤
-│  LEARNING & ADAPTATION                                   │
-│  ├─ Online Learning                                      │
-│  ├─ Meta-Learning                                        │
-│  └─ Continual Improvement                                │
-└─────────────────────────────────────────────────────────┘
-```
+
+See [Architecture Overview](systems-design/architecture-overview.md) for detailed specifications.
 
 ## 📁 Repository Structure
 
 ```
 alex-ai-research-lab/
-├── research-log/          # Daily/weekly research logs and discoveries
-├── notes/                 # Research notes, concepts, theories, algorithms
-├── papers/                # Paper summaries, reviews, and insights
-├── experiments/           # Experiment plans, results, and evaluations
-├── ideas/                 # Raw ideas, concepts, and brainstorming
-├── systems-design/        # Architecture blueprints and system designs
-├── models/                # Model implementations and code
-└── datasets/              # Dataset documentation and references
+├── research-log/              # Daily/weekly research logs
+├── notes/                     # Research notes and concepts
+│   ├── book-summaries/        # Book summaries
+│   └── paper-summaries/       # Concise paper summaries
+├── papers/                    # Detailed paper reviews
+├── experiments/               # Experiment plans and results
+├── ideas/                     # Raw ideas and brainstorming
+├── systems-design/            # Architecture blueprints
+│   ├── memory/                # Memory system designs
+│   ├── reasoning/             # Reasoning engine designs
+│   ├── planning/              # Planning module designs
+│   ├── safety/                # Safety framework designs
+│   └── architecture-overview.md
+├── models/                    # Model implementations
+├── datasets/                  # Dataset documentation
+├── templates/                 # Document templates
+└── docs/                      # Documentation
+    ├── concepts/              # Core concept definitions
+    ├── roadmap.md             # Research roadmap
+    └── research-workflow.md   # Workflow guidelines
 ```
 
 ## 🔬 Research Focus Areas
@@ -131,6 +182,59 @@ alex-ai-research-lab/
 - Collective intelligence
 - Emergent behaviors
 
+## 🚀 Getting Started
+
+### For Researchers
+
+1. **Read the Documentation**
+   - Start with [Architecture Overview](systems-design/architecture-overview.md)
+   - Review [Research Workflow](docs/research-workflow.md)
+   - Check [Roadmap](docs/roadmap.md) for current priorities
+
+2. **Use Templates**
+   - Research notes: `templates/research-note-template.md`
+   - Paper summaries: `templates/paper-summary-template.md`
+   - Experiments: `templates/experiment-template.md`
+   - See [Templates](templates/) for all templates
+
+3. **Follow Naming Conventions**
+   - See [Naming Conventions](docs/naming-conventions.md)
+   - Use lowercase with hyphens
+   - Be descriptive and specific
+
+4. **Contribute**
+   - Read [CONTRIBUTING.md](CONTRIBUTING.md)
+   - Follow the research workflow
+   - Link related documents
+
+### Quick Links
+
+- **[Architecture Overview](systems-design/architecture-overview.md)** — System design
+- **[Roadmap](docs/roadmap.md)** — Research timeline
+- **[Research Workflow](docs/research-workflow.md)** — How to contribute
+- **[Templates](templates/)** — Document templates
+- **[Concepts](docs/concepts/)** — Core module definitions
+
+## 🗺️ Roadmap
+
+### Near-Term (0-3 Months)
+- Complete architecture specifications
+- Build initial memory and reasoning prototypes
+- Establish research baseline
+
+### Medium-Term (3-12 Months)
+- Integrate core modules
+- Run systematic experiments
+- Refine architecture based on results
+
+### Long-Term (1-2 Years)
+- Advanced cognitive capabilities
+- Multi-agent coordination
+- Robotics integration
+- Real-world deployment readiness
+
+See [Full Roadmap](docs/roadmap.md) for detailed timeline and milestones.
+
 ## 🚀 Current Status
 
 **Phase: Early Research & Design**
@@ -166,11 +270,33 @@ Contributions can include:
 
 ## 📖 Documentation
 
+### Core Documentation
 - **[Architecture Overview](systems-design/architecture-overview.md)** — High-level system design
-- **[Documentation & Templates](docs/README.md)** — Templates and documentation guidelines
-- **[Research Log](research-log/)** — Ongoing research discoveries and insights
+- **[Roadmap](docs/roadmap.md)** — Research timeline and milestones
+- **[Research Workflow](docs/research-workflow.md)** — How to conduct research
+- **[Naming Conventions](docs/naming-conventions.md)** — File and folder naming rules
+
+### Module Documentation
+- **[Memory System](systems-design/memory/memory-overview.md)** — Memory architecture
+- **[Reasoning Engine](systems-design/reasoning/reasoning-core.md)** — Reasoning architecture
+- **[Safety Framework](systems-design/safety/safety-overview.md)** — Safety mechanisms
+
+### Concept Definitions
+- **[Memory Concepts](docs/concepts/memory.md)** — Memory system concepts
+- **[Reasoning Concepts](docs/concepts/reasoning.md)** — Reasoning concepts
+- **[Planning Concepts](docs/concepts/planning.md)** — Planning concepts
+- **[Safety Concepts](docs/concepts/safety.md)** — Safety concepts
+
+### Research Content
+- **[Research Log](research-log/)** — Ongoing discoveries and insights
 - **[Experiments](experiments/)** — Experimental designs and results
-- **[Papers](papers/)** — Literature reviews and summaries
+- **[Papers](papers/)** — Detailed paper reviews
+- **[Paper Summaries](notes/paper-summaries/)** — Concise paper summaries
+- **[Notes](notes/)** — Research notes and technical documentation
+- **[Ideas](ideas/)** — Raw ideas and brainstorming
+
+### Templates
+- **[Templates Directory](templates/)** — All document templates
 
 ## 🔗 Related Research
 

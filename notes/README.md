@@ -12,11 +12,20 @@ Research notes document:
 - Research questions
 - Experiment proposals
 
+## Subdirectories
+
+- **`book-summaries/`** — Summaries of relevant books
+- **`paper-summaries/`** — Concise summaries of papers (for quick reference)
+
+Note: Detailed paper reviews go in `/papers/`, while concise summaries go here.
+
 ## Template
 
-See [docs/templates/research-note-template.md](../docs/templates/research-note-template.md) for a template.
+See [templates/research-note-template.md](../templates/research-note-template.md) for a template.
 
 ## Naming Convention
 
 Use descriptive, lowercase names with hyphens: `episodic-memory-design.md`, `reasoning-engine-architecture.md`
+
+See [Naming Conventions](../docs/naming-conventions.md) for full guidelines.
 
